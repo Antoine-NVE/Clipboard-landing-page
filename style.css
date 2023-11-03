@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree';
+    text-align: center;
+}
+
+header, section {
+    padding: 0 10px;
+}
+
+section {
+    margin-bottom: 75px;
+}
+
+h1, h2, h3 {
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 10px;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+h1 + p, h2 + p {
+    max-width: 550px;
+    margin: 0 auto 50px;
+    line-height: 25px;
+}
+
+h3 + p {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+                                        /* DOWNLOAD */
+
+.download {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.download a {
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.download a:hover {
+    opacity: 0.75;
+}
+
+.cyan {
+    background: hsl(171, 66%, 44%);
+    margin-right: 10px;
+    box-shadow: 0 3px 0 hsla(171, 66%, 44%, 0.75);
+}
+
+.blue {
+    background: hsl(233, 100%, 69%);
+    box-shadow: 0 3px 0 hsla(233, 100%, 69%, 0.75);
+}
+
+                                        /* HEADER */
+
+header {
+    padding-top: 50px;
+    background: url(assets/bg-header-desktop.png) top/cover;
+}
+
+header img {
+    margin-bottom: 50px;
+}
+
+                                        /* SECTION 1 */
+
+.container {
+    position: relative;
+    min-height: 572px;
+}
+
+.computer {
+    position: absolute;
+    right: 50%;
+}
+
+.snippets {
+    position: absolute;
+    left: 50%;
+    margin-left: 50px;
+    text-align: left;
+    max-width: 350px;
+}
+
+                                        /* SECTION 2 */
+
+.tools {
+    display: flex;
+    justify-content: center;
+}
+
+.tool {
+    max-width: 350px;
+    margin: 0 10px;
+}
+
+.tool img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+    object-fit: none;
+}
+
+.logos {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+                                        /* FOOTER */
+
+footer {
+    background: lightgray;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 100vh 0 100vh lightgray;
+}
+
+footer img {
+    width: 62.5px;
+    margin-right: 150px;
+}
+
+footer a {
+    color: hsl(210, 10%, 33%);
+}
+
+footer a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.grid {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    margin-right: 150px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex a {
+    margin-left: 10px;
+}
+
+                                        /* Responsive */
+
+@media screen and (max-width:840px) {
+
+                    /* SECTION  */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .computer {
+        position: relative;
+        right: 0;
+        margin-bottom: 50px;
+    }
+
+    .snippets {
+        position: relative;
+        left: 0;
+        max-width: fit-content;
+        margin: 0;
+        text-align: center;
+    }
+
+                    /* SECTION 2 */
+
+    .tools {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .logos {
+        flex-direction: column;
+        max-width: max-content;
+    }
+
+    .logos img {
+        margin-bottom: 50px;
+    }
+
+                    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer img {
+        margin: 0 0 50px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        text-align: center;
+        margin: 0;
+    }
+
+    .grid a {
+        margin-bottom: 25px;
+    }
+
+    .flex {
+        width: 100px;
+        justify-content: space-between;
+    }
+
+    .flex a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+                    /* DOWNLOAD */
+
+    .download {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cyan {
+        margin: 0 0 25px;
+    }
+}
